@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 3200;
 app.use(cors({
   origin: [
     "http://localhost:5173",
+    "http://localhost:5152",
     "https://api.bitezy.online"
   ],
   methods: ["POST", "GET"],
