@@ -54,7 +54,7 @@ router.post("/send-email", async (req, res) => {
     const safeBody = cleanBody(body);
 
     const mailOptions = {
-      from: `"Mail Service" <${process.env.EMAIL_USER}>`,
+      from: `"Bitezy Online" <${process.env.EMAIL_USER}>`,
       to: recipient,
       subject: `${prefix} ${subject}`,
       text: safeBody.replace(/<[^>]+>/g, ""), // plain text fallback
